@@ -1,0 +1,581 @@
+{
+  "checks": [
+    {
+      "test": "Stopping field heartbeat trips native watchdog and latches ESTOP_FLT while telemetry stays live",
+      "result": "PASS"
+    },
+    {
+      "test": "Link recovery requires deliberate Reset and separate Start",
+      "result": "PASS"
+    },
+    {
+      "test": "Full Node-RED redeploy recovers native field subscription and live telemetry",
+      "result": "PASS"
+    },
+    {
+      "test": "Pausing actual TriLOGI causes PLC DISCONNECTED and blocks controls",
+      "result": "PASS"
+    },
+    {
+      "test": "Native MQTT recovers after a long simulator pause without restarting TriLOGI",
+      "result": "PASS"
+    },
+    {
+      "test": "A disabled PLC remains disabled after a long pause and Reset",
+      "result": "PASS"
+    },
+    {
+      "test": "Repeated Ctrl+F9 reconnects the native MQTT session",
+      "result": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "recorded_at": "2026-11-12T17:28:03.348Z",
+      "test": "Stopping field heartbeat trips native watchdog and latches ESTOP_FLT while telemetry stays live",
+      "snapshot": {
+        "state": "FAULT \u2014 RESET REQUIRED",
+        "time": "60.2",
+        "position": 1,
+        "door": 0,
+        "currentFloor": null,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [
+          "ESTOP_FLT"
+        ],
+        "inputs": {
+          "FLOOR1": false,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": false,
+          "OBSTRUCT": false,
+          "ESTOP_OK": false
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": true,
+          "BUZZER": true
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "57.8",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "0.1",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 23,
+          "rx": 1,
+          "ageMs": 23,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-11-12T17:28:04.792Z",
+      "test": "Link recovery requires deliberate Reset and separate Start",
+      "snapshot": {
+        "state": "DISABLED",
+        "time": "61.6",
+        "position": 1,
+        "door": 0,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "61.1",
+            "event": "DISABLED"
+          },
+          {
+            "time": "57.8",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "0.1",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 35,
+          "rx": 13,
+          "ageMs": 108,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-11-12T17:28:22.028Z",
+      "test": "Full Node-RED redeploy recovers native field subscription and live telemetry",
+      "snapshot": {
+        "state": "DISABLED",
+        "time": "77.3",
+        "position": 1,
+        "door": 0,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "61.1",
+            "event": "DISABLED"
+          },
+          {
+            "time": "57.8",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "0.1",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 187,
+          "rx": 170,
+          "ageMs": 19,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-11-12T17:34:14.569Z",
+      "test": "Pausing actual TriLOGI causes PLC DISCONNECTED and blocks controls",
+      "snapshot": {
+        "state": "PLC DISCONNECTED",
+        "time": "116.4",
+        "position": 1,
+        "door": 0,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "116.4",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "84.4",
+            "event": "DISABLED"
+          },
+          {
+            "time": "83.3",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "14.9",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "13.2",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": false,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 2555,
+          "rx": 2771,
+          "ageMs": 3788,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-11-12T17:35:20.578Z",
+      "test": "Native MQTT recovers after a long simulator pause without restarting TriLOGI",
+      "snapshot": {
+        "state": "DISABLED",
+        "time": "117.5",
+        "position": 1,
+        "door": 0,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "116.4",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "84.4",
+            "event": "DISABLED"
+          },
+          {
+            "time": "83.3",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "14.9",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "13.2",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 2560,
+          "rx": 2829,
+          "ageMs": 719,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-11-12T17:35:21.210Z",
+      "test": "A disabled PLC remains disabled after a long pause and Reset",
+      "snapshot": {
+        "state": "PLC DISCONNECTED",
+        "time": "118.0",
+        "position": 1,
+        "door": 0,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "118.0",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "116.4",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "84.4",
+            "event": "DISABLED"
+          },
+          {
+            "time": "83.3",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "14.9",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "13.2",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": false,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 2560,
+          "rx": 2829,
+          "ageMs": 1361,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-11-12T17:35:56.082Z",
+      "test": "Repeated Ctrl+F9 reconnects the native MQTT session",
+      "snapshot": {
+        "state": "FAULT \u2014 RESET REQUIRED",
+        "time": "121.1",
+        "position": 1,
+        "door": 0,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [
+          "ESTOP_FLT"
+        ],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": true,
+          "BUZZER": true
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "120.8",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "120.8",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "119.7",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "118.0",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "116.4",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "84.4",
+            "event": "DISABLED"
+          },
+          {
+            "time": "83.3",
+            "event": "FAULT \u2014 RESET REQUIRED"
+          },
+          {
+            "time": "14.9",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "13.2",
+            "event": "PLC LINK LOST \u2014 FIELD MODEL HELD"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 3,
+          "rx": 10,
+          "ageMs": 64,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    }
+  ],
+  "result": "PASS",
+  "scope": "Seven checks on the final connected adapter. Long pause starts with the PLC disabled and healthy at floor 1. Communication-loss watchdog is a separate test with the native simulator running.",
+  "connected_project_sha256": "9e8967c3d0e75f4e6ddbc8f83d62cadb4d353630670ef72bb69ffbf2259d199e"
+}

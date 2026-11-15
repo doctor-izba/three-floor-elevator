@@ -1,0 +1,652 @@
+[
+  {
+    "name": "T1 Normal trip and door cycle",
+    "end": 78,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB3": 1
+      },
+      "6": {
+        "CAB3": 0,
+        "FLOOR1": 0
+      },
+      "8": {
+        "FLOOR2": 1
+      },
+      "9": {
+        "FLOOR2": 0
+      },
+      "11": {
+        "FLOOR3": 1
+      },
+      "13": {
+        "DOOR_CLOSED": 0
+      },
+      "15": {
+        "DOOR_OPEN": 1
+      },
+      "72": {
+        "DOOR_OPEN": 0
+      },
+      "74": {
+        "DOOR_CLOSED": 1
+      }
+    },
+    "checks": [
+      [
+        7,
+        [
+          "MOTOR_UP",
+          "REQ3"
+        ],
+        [
+          "MOTOR_DOWN"
+        ]
+      ],
+      [
+        12,
+        [
+          "OPENING"
+        ],
+        [
+          "MOTOR_UP"
+        ]
+      ],
+      [
+        16,
+        [
+          "DWELL"
+        ],
+        [
+          "REQ3"
+        ]
+      ],
+      [
+        71,
+        [
+          "CLOSING"
+        ],
+        []
+      ],
+      [
+        76,
+        [
+          "IDLE",
+          "RUN_EN"
+        ],
+        [
+          "FAULT",
+          "REQ3"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T2 Queued stops and direction reversal",
+    "end": 220,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB2": 1,
+        "CAB3": 1
+      },
+      "6": {
+        "CAB2": 0,
+        "CAB3": 0,
+        "FLOOR1": 0
+      },
+      "11": {
+        "FLOOR2": 1
+      },
+      "13": {
+        "DOOR_CLOSED": 0
+      },
+      "15": {
+        "DOOR_OPEN": 1
+      },
+      "70": {
+        "DOOR_OPEN": 0
+      },
+      "72": {
+        "DOOR_CLOSED": 1
+      },
+      "76": {
+        "FLOOR2": 0
+      },
+      "80": {
+        "FLOOR3": 1
+      },
+      "82": {
+        "DOOR_CLOSED": 0
+      },
+      "84": {
+        "DOOR_OPEN": 1
+      },
+      "140": {
+        "DOOR_OPEN": 0
+      },
+      "142": {
+        "DOOR_CLOSED": 1
+      },
+      "144": {
+        "CAB1": 1
+      },
+      "145": {
+        "CAB1": 0
+      },
+      "146": {
+        "FLOOR3": 0
+      },
+      "148": {
+        "FLOOR2": 1
+      },
+      "149": {
+        "FLOOR2": 0
+      },
+      "152": {
+        "FLOOR1": 1
+      },
+      "156": {
+        "DOOR_CLOSED": 0
+      },
+      "158": {
+        "DOOR_OPEN": 1
+      },
+      "214": {
+        "DOOR_OPEN": 0
+      },
+      "216": {
+        "DOOR_CLOSED": 1
+      }
+    },
+    "checks": [
+      [
+        12,
+        [
+          "OPENING",
+          "REQ3"
+        ],
+        [
+          "MOTOR_UP"
+        ]
+      ],
+      [
+        75,
+        [
+          "MOTOR_UP",
+          "REQ3"
+        ],
+        [
+          "REQ2"
+        ]
+      ],
+      [
+        85,
+        [
+          "DWELL"
+        ],
+        [
+          "REQ3"
+        ]
+      ],
+      [
+        147,
+        [
+          "MOTOR_DOWN"
+        ],
+        [
+          "MOTOR_UP"
+        ]
+      ],
+      [
+        154,
+        [
+          "OPENING"
+        ],
+        [
+          "MOTOR_DOWN"
+        ]
+      ],
+      [
+        218,
+        [
+          "IDLE"
+        ],
+        [
+          "FAULT",
+          "REQ1"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T3 Obstruction reopening and deliberate recovery",
+    "end": 90,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB1": 1
+      },
+      "6": {
+        "CAB1": 0,
+        "DOOR_CLOSED": 0
+      },
+      "8": {
+        "DOOR_OPEN": 1
+      },
+      "64": {
+        "DOOR_OPEN": 0
+      },
+      "66": {
+        "OBSTRUCT": 1
+      },
+      "70": {
+        "DOOR_OPEN": 1
+      },
+      "72": {
+        "RESET": 1
+      },
+      "74": {
+        "RESET": 0
+      },
+      "75": {
+        "OBSTRUCT": 0
+      },
+      "76": {
+        "RESET": 1
+      },
+      "77": {
+        "RESET": 0
+      },
+      "80": {
+        "START": 1
+      },
+      "81": {
+        "START": 0
+      },
+      "84": {
+        "DOOR_OPEN": 0
+      },
+      "86": {
+        "DOOR_CLOSED": 1
+      }
+    },
+    "checks": [
+      [
+        68,
+        [
+          "JAM_FLT",
+          "REOPEN",
+          "DOOR_OP_CMD",
+          "BUZZER"
+        ],
+        [
+          "MOTOR_UP",
+          "MOTOR_DOWN",
+          "DOOR_CL_CMD",
+          "RUN_EN"
+        ]
+      ],
+      [
+        73,
+        [
+          "FAULT"
+        ],
+        [
+          "REOPEN",
+          "DOOR_CL_CMD"
+        ]
+      ],
+      [
+        78,
+        [],
+        [
+          "FAULT",
+          "RUN_EN"
+        ]
+      ],
+      [
+        88,
+        [
+          "IDLE",
+          "RUN_EN"
+        ],
+        [
+          "FAULT"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T4 Closing timeout reopening and recovery",
+    "end": 162,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB1": 1
+      },
+      "6": {
+        "CAB1": 0,
+        "DOOR_CLOSED": 0
+      },
+      "8": {
+        "DOOR_OPEN": 1
+      },
+      "64": {
+        "DOOR_OPEN": 0
+      },
+      "146": {
+        "DOOR_OPEN": 1
+      },
+      "150": {
+        "RESET": 1
+      },
+      "151": {
+        "RESET": 0
+      },
+      "154": {
+        "START": 1
+      },
+      "155": {
+        "START": 0
+      },
+      "156": {
+        "DOOR_OPEN": 0
+      },
+      "158": {
+        "DOOR_CLOSED": 1
+      }
+    },
+    "checks": [
+      [
+        145,
+        [
+          "JAM_FLT",
+          "REOPEN",
+          "DOOR_OP_CMD",
+          "BUZZER"
+        ],
+        [
+          "MOTOR_UP",
+          "MOTOR_DOWN",
+          "DOOR_CL_CMD"
+        ]
+      ],
+      [
+        148,
+        [
+          "FAULT"
+        ],
+        [
+          "REOPEN"
+        ]
+      ],
+      [
+        152,
+        [],
+        [
+          "FAULT",
+          "RUN_EN"
+        ]
+      ],
+      [
+        160,
+        [
+          "IDLE",
+          "RUN_EN"
+        ],
+        [
+          "FAULT"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T5 Emergency stop between floors and reset",
+    "end": 28,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB3": 1
+      },
+      "6": {
+        "CAB3": 0,
+        "FLOOR1": 0
+      },
+      "10": {
+        "ESTOP_OK": 0
+      },
+      "14": {
+        "ESTOP_OK": 1,
+        "RESET": 1
+      },
+      "17": {
+        "RESET": 0
+      },
+      "18": {
+        "FLOOR1": 1
+      },
+      "20": {
+        "RESET": 1
+      },
+      "21": {
+        "RESET": 0
+      },
+      "24": {
+        "START": 1
+      },
+      "25": {
+        "START": 0
+      }
+    },
+    "checks": [
+      [
+        12,
+        [
+          "FAULT",
+          "ESTOP_FLT"
+        ],
+        [
+          "MOTOR_UP",
+          "MOTOR_DOWN",
+          "RUN_EN"
+        ]
+      ],
+      [
+        16,
+        [
+          "FAULT"
+        ],
+        []
+      ],
+      [
+        26,
+        [
+          "RUN_EN"
+        ],
+        [
+          "FAULT"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T6 Conflicting floor sensors",
+    "end": 10,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "FLOOR2": 1
+      }
+    },
+    "checks": [
+      [
+        7,
+        [
+          "SENSOR_FLT",
+          "FAULT"
+        ],
+        [
+          "MOTOR_UP",
+          "MOTOR_DOWN",
+          "DOOR_OP_CMD",
+          "DOOR_CL_CMD"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T7 Door confirmation lost during travel",
+    "end": 15,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB3": 1
+      },
+      "6": {
+        "CAB3": 0,
+        "FLOOR1": 0
+      },
+      "10": {
+        "DOOR_CLOSED": 0
+      }
+    },
+    "checks": [
+      [
+        12,
+        [
+          "DOOR_FLT",
+          "FAULT"
+        ],
+        [
+          "MOTOR_UP",
+          "MOTOR_DOWN",
+          "DOOR_OP_CMD"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T8 Travel timeout",
+    "end": 164,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB3": 1
+      },
+      "6": {
+        "CAB3": 0,
+        "FLOOR1": 0
+      }
+    },
+    "checks": [
+      [
+        160,
+        [
+          "TRAVEL_FLT",
+          "FAULT",
+          "BUZZER"
+        ],
+        [
+          "MOTOR_UP",
+          "MOTOR_DOWN",
+          "RUN_EN"
+        ]
+      ]
+    ]
+  },
+  {
+    "name": "T9 Recovery opening timeout",
+    "end": 155,
+    "events": {
+      "2": {
+        "START": 1
+      },
+      "3": {
+        "START": 0
+      },
+      "5": {
+        "CAB1": 1
+      },
+      "6": {
+        "CAB1": 0,
+        "DOOR_CLOSED": 0
+      },
+      "8": {
+        "DOOR_OPEN": 1
+      },
+      "64": {
+        "DOOR_OPEN": 0
+      },
+      "66": {
+        "OBSTRUCT": 1
+      }
+    },
+    "checks": [
+      [
+        68,
+        [
+          "REOPEN",
+          "DOOR_OP_CMD"
+        ],
+        []
+      ],
+      [
+        151,
+        [
+          "DOOR_FLT",
+          "HARD_FAULT",
+          "JAM_FLT"
+        ],
+        [
+          "REOPEN",
+          "DOOR_OP_CMD",
+          "DOOR_CL_CMD",
+          "MOTOR_UP",
+          "MOTOR_DOWN"
+        ]
+      ]
+    ]
+  }
+]

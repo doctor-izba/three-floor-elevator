@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "normal_samples": 116,
+  "jam_samples": 174,
+  "closing_timeout_wall_s": 9.051,
+  "closing_timeout_native_ticks": 80,
+  "native_tick_nominal_s": 0.1,
+  "nominal_timeout_s": 8,
+  "timing_note": "Native clock ticks verify the timer preset; wall time includes simulator and MQTT scheduling overhead and is not hard real-time.",
+  "source": "Actual running native ladder; no controller equation evaluator used"
+}

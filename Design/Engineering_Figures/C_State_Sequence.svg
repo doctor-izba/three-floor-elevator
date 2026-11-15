@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="720" height="420" preserveAspectRatio="xMinYMin meet" viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="720" height="420"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-420)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="6.0" y="399.0" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,798) scale(1,-1)">Sequence and fault priority</text>
+			<rect x="264.0" y="321.0" width="192.0" height="48.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="344.054" y="351.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,702) scale(1,-1)">IDLE</text>
+			<rect x="24.0" y="237.0" width="180.0" height="48.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="85.223" y="267.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,534) scale(1,-1)">UP_RUN</text>
+			<rect x="516.0" y="237.0" width="180.0" height="48.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="564.784" y="267.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,534) scale(1,-1)">DOWN_RUN</text>
+			<rect x="264.0" y="168.0" width="192.0" height="48.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="327.716" y="198.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,396) scale(1,-1)">OPENING</text>
+			<rect x="264.0" y="90.0" width="192.0" height="48.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="335.115" y="119.99999999999999" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,239) scale(1,-1)">DWELL</text>
+			<rect x="264.0" y="12.0" width="192.0" height="48.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="328.108" y="42.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,84) scale(1,-1)">CLOSING</text>
+			<polyline points="264 333, 257.1 330.75, 250.2 328.5, 243.3 326.25, 236.4 324, 229.5 321.75, 222.6 319.5, 215.7 317.25, 208.8 315, 201.9 312.75, 195 310.5, 188.1 308.25, 181.2 306, 174.3 303.75, 167.4 301.5, 160.5 299.25, 153.6 297, 146.7 294.75, 139.8 292.5, 132.9 290.25, 126 288" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="126 288, 135.979 287.3526, 133.6792 294.4055" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="158.007" y="318.29999999999995" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,636) scale(1,-1)">Request above</text>
+			<polyline points="456 333, 462.9 330.75, 469.8 328.5, 476.7 326.25, 483.6 324, 490.5 321.75, 497.4 319.5, 504.3 317.25, 511.2 315, 518.1 312.75, 525 310.5, 531.9 308.25, 538.8 306, 545.7 303.75, 552.6 301.5, 559.5 299.25, 566.4 297, 573.3 294.75, 580.2 292.5, 587.1 290.25, 594 288" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="594 288, 586.3208 294.4055, 584.021 287.3526" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="488.623" y="318.29999999999995" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,636) scale(1,-1)">Request below</text>
+			<polyline points="204 249, 207 246.45, 210 243.9, 213 241.35, 216 238.8, 219 236.25, 222 233.7, 225 231.15, 228 228.6, 231 226.05, 234 223.5, 237 220.95, 240 218.4, 243 215.85, 246 213.3, 249 210.75, 252 208.2, 255 205.65, 258 203.1, 261 200.55, 264 198" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="264 198, 259.3264 206.8407, 254.5219 201.1883" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="218.41850000000002" y="231.3" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,462) scale(1,-1)">Arrival</text>
+			<polyline points="516 249, 513 246.45, 510 243.9, 507 241.35, 504 238.8, 501 236.25, 498 233.7, 495 231.15, 492 228.6, 489 226.05, 486 223.5, 483 220.95, 480 218.4, 477 215.85, 474 213.3, 471 210.75, 468 208.2, 465 205.65, 462 203.1, 459 200.55, 456 198" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="456 198, 465.4781 201.1883, 460.6736 206.8407" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="470.4185" y="231.3" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,462) scale(1,-1)">Arrival</text>
+			<polyline points="360 318, 360 313.05, 360 308.1, 360 303.15, 360 298.2, 360 293.25, 360 288.3, 360 283.35, 360 278.4, 360 273.45, 360 268.5, 360 263.55, 360 258.6, 360 253.65, 360 248.7, 360 243.75, 360 238.8, 360 233.85, 360 228.9, 360 223.95, 360 219" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="360 219, 363.7092 228.2866, 356.2908 228.2866" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="369.0" y="258.0" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,516) scale(1,-1)">Current-floor</text>
+			<text x="369.0" y="243.15" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,486) scale(1,-1)">request</text>
+			<polyline points="360 165, 360 163.8, 360 162.6, 360 161.4, 360 160.2, 360 159, 360 157.8, 360 156.6, 360 155.4, 360 154.2, 360 153, 360 151.8, 360 150.6, 360 149.4, 360 148.2, 360 147, 360 145.8, 360 144.6, 360 143.4, 360 142.2, 360 141" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="360 141, 363.7092 150.2866, 356.2908 150.2866" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="372.0" y="150.6" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,301) scale(1,-1)">Open feedback</text>
+			<polyline points="360 87, 360 85.8, 360 84.6, 360 83.4, 360 82.2, 360 81, 360 79.8, 360 78.6, 360 77.4, 360 76.2, 360 75, 360 73.8, 360 72.6, 360 71.4, 360 70.2, 360 69, 360 67.8, 360 66.6, 360 65.4, 360 64.2, 360 63" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="360 63, 363.7092 72.28665, 356.2908 72.28665" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="372.0" y="72.6" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,145) scale(1,-1)">5 s + clear path</text>
+			<polyline points="459 33, 466.3388 48.45, 472.905 63.9, 478.6988 79.35, 483.72 94.8, 487.9688 110.25, 491.445 125.7, 494.1488 141.15, 496.08 156.6, 497.2388 172.05, 497.625 187.5, 497.2388 202.95, 496.08 218.4, 494.1488 233.85, 491.445 249.3, 487.9688 264.75, 483.72 280.2, 478.6987 295.65, 472.905 311.1, 466.3388 326.55, 459 342" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="459 342, 459.6341 332.0201, 466.3349 335.203" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="480" y="348.0" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,696) scale(1,-1)">Closed feedback</text>
+			<rect x="24.0" y="18.0" width="189.0" height="156.0" rx="4" ry="4" style="stroke: rgb(63%,24%,26%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="72.594" y="156.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(63%,24%,26%); stroke:none;" transform="translate(0,312) scale(1,-1)">JAM recovery</text>
+			<text x="63.2305" y="90.0" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,180) scale(1,-1)">Closing obstruction</text>
+			<text x="79.123" y="72.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,144) scale(1,-1)">or 8 s timeout</text>
+			<text x="64.13399999999999" y="54.9" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,109) scale(1,-1)">REOPEN + buzzer</text>
+			<text x="37.19799999999999" y="37.349999999999994" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,74) scale(1,-1)">Open feedback stops output</text>
+			<polyline points="261 39, 258.75 39, 256.5 39, 254.25 39, 252 39, 249.75 39, 247.5 39, 245.25 39, 243 39, 240.75 39, 238.5 39, 236.25 39, 234 39, 231.75 39, 229.5 39, 227.25 39, 225 39, 222.75 39, 220.5 39, 218.25 39, 216 39" style="stroke: rgb(63%,24%,26%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="216 39, 225.2866 35.2908, 225.2866 42.7092" style="stroke: rgb(63%,24%,26%); stroke-linecap: butt; stroke-width: 1; fill: rgb(63%,24%,26%); fill-rule: evenodd;"/>
+			<rect x="519.0" y="18.0" width="180.0" height="156.0" rx="4" ry="4" style="stroke: rgb(63%,24%,26%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="550.27" y="156.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(63%,24%,26%); stroke:none;" transform="translate(0,312) scale(1,-1)">Hard fault priority</text>
+			<text x="549.3885" y="90.0" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,180) scale(1,-1)">E-stop / bad sensors</text>
+			<text x="537.4675" y="72.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,144) scale(1,-1)">Lost door / travel timeout</text>
+			<text x="558.43" y="54.9" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,109) scale(1,-1)">Recovery timeout</text>
+			<text x="541.0945" y="37.349999999999994" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,74) scale(1,-1)">Motion commands OFF</text>
+			<text x="24.0" y="213.0" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,426) scale(1,-1)">DISABLED is an overlay.</text>
+			<text x="24.0" y="196.8" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,393) scale(1,-1)">Reset clears corrected faults;</text>
+			<text x="24.0" y="180.6" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,361) scale(1,-1)">Start separately enables.</text>
+			<text x="519.0" y="207.0" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,414) scale(1,-1)">Reopening needs a valid</text>
+			<text x="519.0" y="190.8" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,381) scale(1,-1)">floor and no hard fault.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-11-12T17:36:29.495630+00:00",
+  "result": "PASS",
+  "connected_project_sha256": "9e8967c3d0e75f4e6ddbc8f83d62cadb4d353630670ef72bb69ffbf2259d199e",
+  "native_compilation": {
+    "result": "Success",
+    "circuits": 72,
+    "ladder_words": 402,
+    "custom_words": 1038,
+    "total_words": 1440,
+    "checksum": "00016E13",
+    "screenshot": "connected_compile.png"
+  },
+  "browser_checks": 11,
+  "communication_checks": 7,
+  "long_pause": {
+    "pause_ms": 68428,
+    "started": 1794504850617,
+    "ended": 1794504919045,
+    "initial_condition": "PLC disabled, healthy at floor 1; verified via native E-stop, release and Reset before pausing",
+    "method": "Actual simulator Pause button; UI observations before and after"
+  },
+  "trace": {
+    "result": "PASS",
+    "normal_samples": 116,
+    "jam_samples": 174,
+    "closing_timeout_wall_s": 9.051,
+    "closing_timeout_native_ticks": 80,
+    "native_tick_nominal_s": 0.1,
+    "nominal_timeout_s": 8,
+    "timing_note": "Native clock ticks verify the timer preset; wall time includes simulator and MQTT scheduling overhead and is not hard real-time.",
+    "source": "Actual running native ladder; no controller equation evaluator used"
+  },
+  "launcher": {
+    "CheckOnly": "PASS",
+    "repeat_launch": "PASS",
+    "native_process_count_before": 1,
+    "native_process_count_after": 1,
+    "observation": "START_DEMO.ps1 executed; existing Node-RED reused and no duplicate connected Java process created"
+  }
+}

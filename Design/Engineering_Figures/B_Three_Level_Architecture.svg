@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="720" height="420" preserveAspectRatio="xMinYMin meet" viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="720" height="420"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-420)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="6.0" y="399.0" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,798) scale(1,-1)">Field to control to supervision</text>
+			<rect x="30.0" y="18.0" width="414.0" height="78.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="216.777" y="78.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,156) scale(1,-1)">FIELD</text>
+			<text x="99.51849999999999" y="51.0" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,102) scale(1,-1)">6 request buttons + 9 feedback/operator signals</text>
+			<text x="109.288" y="33.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,66) scale(1,-1)">Hoist and door interfaces + lamp and buzzer</text>
+			<rect x="30.0" y="159.0" width="414.0" height="78.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="202.392" y="219.00000000000003" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,438) scale(1,-1)">CONTROL</text>
+			<text x="133.689" y="191.99999999999997" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,383) scale(1,-1)">Native TriLOGI: 68 control networks</text>
+			<text x="89.62549999999999" y="174.44999999999996" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,348) scale(1,-1)">Request memory, dispatcher, five timers, interlocks</text>
+			<rect x="30.0" y="300" width="414.0" height="78.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="186.43200000000002" y="360.0" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,720) scale(1,-1)">SUPERVISORY</text>
+			<text x="83.84699999999998" y="333.00000000000006" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,666) scale(1,-1)">Node-RED HMI: commands, status, requests, alarms</text>
+			<text x="129.34050000000002" y="315.45000000000005" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,630) scale(1,-1)">Browser dashboard and event history</text>
+			<polyline points="102 99, 102 101.85, 102 104.7, 102 107.55, 102 110.4, 102 113.25, 102 116.1, 102 118.95, 102 121.8, 102 124.65, 102 127.5, 102 130.35, 102 133.2, 102 136.05, 102 138.9, 102 141.75, 102 144.6, 102 147.45, 102 150.3, 102 153.15, 102 156" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="102 156, 98.2908 146.7134, 105.7092 146.7134" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="114.0" y="126.0" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,252) scale(1,-1)">15 DI</text>
+			<polyline points="366 156, 366 153.15, 366 150.3, 366 147.45, 366 144.6, 366 141.75, 366 138.9, 366 136.05, 366 133.2, 366 130.35, 366 127.5, 366 124.65, 366 121.8, 366 118.95, 366 116.1, 366 113.25, 366 110.4, 366 107.55, 366 104.7, 366 101.85, 366 99" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="366 99, 369.7092 108.2866, 362.2908 108.2866" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="378.0" y="126.0" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,252) scale(1,-1)">6 DO</text>
+			<polyline points="102 240, 102 242.85, 102 245.7, 102 248.55, 102 251.4, 102 254.25, 102 257.1, 102 259.95, 102 262.8, 102 265.65, 102 268.5, 102 271.35, 102 274.2, 102 277.05, 102 279.9, 102 282.75, 102 285.6, 102 288.45, 102 291.3, 102 294.15, 102 297" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="102 297, 98.2908 287.7134, 105.7092 287.7134" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="114.0" y="264.0" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,528) scale(1,-1)">Native tags</text>
+			<polyline points="366 297, 366 294.15, 366 291.3, 366 288.45, 366 285.6, 366 282.75, 366 279.9, 366 277.05, 366 274.2, 366 271.35, 366 268.5, 366 265.65, 366 262.8, 366 259.95, 366 257.1, 366 254.25, 366 251.4, 366 248.55, 366 245.7, 366 242.85, 366 240" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+			<polygon points="366 240, 369.7092 249.2866, 362.2908 249.2866" style="stroke: rgb(39%,45%,53%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,53%); fill-rule: evenodd;"/>
+			<text x="294.0" y="264.0" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,528) scale(1,-1)">Commands</text>
+			<rect x="480" y="141.0" width="216.0" height="126.0" rx="4" ry="4" style="stroke: rgb(14%,38%,54%); stroke-linecap: butt; stroke-width: 1.6; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="512.54" y="249.00000000000003" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(14%,38%,54%); stroke:none;" transform="translate(0,498) scale(1,-1)">Virtual implementation</text>
+			<text x="532.0155" y="198.00000000000003" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,396) scale(1,-1)">Local MQTT broker</text>
+			<text x="544.6320000000001" y="180.45000000000002" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,360) scale(1,-1)">127.0.0.1:1889</text>
+			<text x="531.2875" y="162.90000000000003" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,325) scale(1,-1)">100 ms field frames</text>
+			<text x="530.553" y="145.35000000000002" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,290) scale(1,-1)">41 native status bits</text>
+			<text x="480" y="108.0" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,216) scale(1,-1)">Node-RED: field mechanics.</text>
+			<text x="480" y="90.45" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,180) scale(1,-1)">TriLOGI: controller execution.</text>
+			<text x="480" y="72.9" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,16%,26%); stroke:none;" transform="translate(0,145) scale(1,-1)">MQTT: virtual field/HMI data.</text>
+			<text x="33.0" y="7.199999999999999" style="font-family: Helvetica; font-size: 11px;fill: rgb(39%,45%,53%); stroke:none;" transform="translate(0,14) scale(1,-1)">Physical design: 24 V circuits; an FMD HMI driver requires an appropriate gateway or protocol.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "application": "i-TRiLOGI 7.52 Build 07 Educational",
+  "main": {
+    "result": "Success",
+    "circuits": 68,
+    "ladder_words": 394,
+    "custom_function_words": 0,
+    "checksum": "0000385F",
+    "screenshot": "native_main_compile.png"
+  },
+  "native_fixture": {
+    "compile": "Success",
+    "circuits": 72,
+    "ladder_words": 402,
+    "custom_function_words": 2020,
+    "checksum": "0002BB88",
+    "T1_PASS": true,
+    "T2_PASS": true,
+    "T3_PASS": true,
+    "T4_PASS": true,
+    "T5_PASS": true,
+    "T6_PASS": true,
+    "T7_PASS": true,
+    "T8_PASS": true,
+    "T9_PASS": true,
+    "ALL_PASS": true,
+    "FAILED": false,
+    "final_screenshot": "native_T9.png"
+  },
+  "observed_date": "2026-11-12",
+  "method": "Actual native simulator screenshots read during execution; fixture uses virtual field relays and unchanged controller rungs and timers"
+}

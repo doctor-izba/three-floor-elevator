@@ -1,0 +1,13 @@
+Test,Result,Evidence type
+T1 Floor 1 to Floor 3 and complete door cycle,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T2 Two queued stops and direction reversal,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T3 Obstruction reopens door and inhibits closing while blocked,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T3b Obstruction takes priority over simultaneous closed feedback,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T4 Door close timeout and controlled reset,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T5 Emergency stop between floors refuses unsafe reset,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T6 Conflicting floor sensors,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T7 Door confirmation lost during travel,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T8 Travel timeout,PASS,Reference model of generated rung equations; not a TriLOGI observation
+T9 Recovery opening timeout stops the door command,PASS,Reference model of generated rung equations; not a TriLOGI observation
+B1 Request memory bench,PASS,Reference model of generated rung equations; not a TriLOGI observation
+S1 3000 randomized scans of output and state invariants,PASS,Reference model only

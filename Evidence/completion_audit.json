@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-11-13T04:13:15.259311+00:00",
+  "technical_status": "PASS",
+  "submission_status": "NEEDS_AUTHOR_CONFIRMATION",
+  "report_pages": 31,
+  "authors": [
+    "Izbassar Yesbol",
+    "Kuanysh Kali"
+  ],
+  "group": "EE-2401",
+  "native_controller_rungs": 68,
+  "native_scenarios": 9,
+  "FBD": "68-network second diagram representation; not native FBD execution",
+  "connected_project_sha256": "9e8967c3d0e75f4e6ddbc8f83d62cadb4d353630670ef72bb69ffbf2259d199e",
+  "requirements": [
+    {
+      "requirement": "Bounded physical process and ten verifiable requirements",
+      "status": "PASS",
+      "evidence": "Report sections 1 and 2"
+    },
+    {
+      "requirement": "Field Control HMI architecture, instrumentation, justified PLC and I/O",
+      "status": "PASS",
+      "evidence": "Report sections 3 and 4; I_O_List.csv; Design/Engineering_Diagrams_and_Timing.pdf"
+    },
+    {
+      "requirement": "Native LD with interlocks, direction queue and closing fault reopening",
+      "status": "PASS",
+      "evidence": "01 and 04 PC7; native_T1 through native_T9; Test_Results.csv; unchanged-core hashes"
+    },
+    {
+      "requirement": "Second PLC diagram type",
+      "status": "PASS_AS_DIAGRAM_REPRESENTATION",
+      "evidence": "Design/Elevator_FBD_Program.pdf; Evidence/FBD_equivalence.json",
+      "limitation": "Native execution is LD only; FBD is supplied as diagrams and an independently evaluated gate graph"
+    },
+    {
+      "requirement": "Normal sensor-limit and fault tests with initial input expected observed conclusion and screenshots",
+      "status": "PASS",
+      "evidence": "Nine complete Test_Results.csv records and native screenshots"
+    },
+    {
+      "requirement": "Live HMI integration and connection recovery",
+      "status": "PASS",
+      "evidence": "Evidence/connected_results.json; connected_link_results.json; connected_final_verification.json"
+    },
+    {
+      "requirement": "Actual individual contribution table",
+      "status": "NEEDS_AUTHOR_CONFIRMATION",
+      "evidence": "Report section 11 contains a proposed defence allocation only"
+    },
+    {
+      "requirement": "AI disclosure and instructor authorization",
+      "status": "DISCLOSURE_PRESENT_AUTHORIZATION_UNCONFIRMED",
+      "evidence": "Report section 11 discloses actual AI assistance; instructor permission is not asserted"
+    },
+    {
+      "requirement": "Individual understanding and oral defence",
+      "status": "REQUIRES_STUDENT_DEMONSTRATION",
+      "evidence": "Defence_Guide_RU.md; cannot be certified by automated tests"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "main_sha256": "4b70a6734df66b7c3d026c54034d2e7f70e0477e05c745e86c34a4915b456b4b",
+  "fixture_sha256": "c91425dc4546310828ee9e53c7c5ff6e0cb2b9741a735e9c6f31792c32d3d71b",
+  "controller_equations": 68,
+  "exact_rung_identity": true,
+  "field_stimulus": "Relays in fixture; digital input channels in main program"
+}

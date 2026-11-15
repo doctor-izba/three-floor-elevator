@@ -1,0 +1,7 @@
+{
+  "pause_ms": 68428,
+  "started": 1794504850617,
+  "ended": 1794504919045,
+  "initial_condition": "PLC disabled, healthy at floor 1; verified via native E-stop, release and Reset before pausing",
+  "method": "Actual simulator Pause button; UI observations before and after"
+}

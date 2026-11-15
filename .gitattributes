@@ -1,0 +1,9 @@
+# Preserve the bytes of the delivered files and their checksum records.
+* -text
+*.PC7 binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.webm binary

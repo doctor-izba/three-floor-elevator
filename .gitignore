@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+!.env.example
+HMI_Node_RED/.*
+Presentation/video_raw/
+~$*
+.DS_Store
+Thumbs.db

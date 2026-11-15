@@ -1,0 +1,153 @@
+{
+  "recorded_at": "2026-11-12T18:41:12.256049+00:00",
+  "result": "PASS",
+  "native_method": "Fresh i-TRiLOGI window captures at enlarged application display size; pointer parked outside target window before capture. T1 through T9 and ALL_PASS observed active, FAILED inactive. Compilation checksums unchanged.",
+  "HMI_method": "Actual connected localhost dashboard captured in a fresh browser context with deviceScaleFactor 3. Disconnected image captured after pausing the actual connected simulator.",
+  "diagram_method": "Rendered again from vector PDF sources at scale 4; no raster upscaling.",
+  "images": [
+    {
+      "file": "native_T1.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "c7e97e31d0aec727f9a98a574b000d628a2c47c345f17ed50a7a7521b77b1265"
+    },
+    {
+      "file": "native_T2.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "8ef6b2ab161476b963a4c446d60af94dfb09fdb1775774b9cb6d4746da0f41b2"
+    },
+    {
+      "file": "native_T3.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "85ba012282dda1a1da3c8c8c78f9ec1f74cc6013b6a1ef854b42a51ed2955935"
+    },
+    {
+      "file": "native_T4.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "a47da59e1e29f9e20b8419650e2da0c20c1f36d73d0e06dc535c43c6e23c56a4"
+    },
+    {
+      "file": "native_T5.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "5dbffb5cc21d542b54228173254f5735896f15ac5a32281c91e2ec15bedb1618"
+    },
+    {
+      "file": "native_T6.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "ff956a885c6bef980b9e26ebb0baffaaf0d4d66a5fd03ae590769b1d1607c0d4"
+    },
+    {
+      "file": "native_T7.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "7654330cf9e927c910aae29ab1c880f13ab3b3f5361c440599a371a1e33846d0"
+    },
+    {
+      "file": "native_T8.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "2ba5f5ff8fa947049a860a04ffa053c91477f1b0eb04d482d55b3fb8e4fa89a0"
+    },
+    {
+      "file": "native_T9.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "e75bf120f809d82537b3d0ce535368675ebb543c02c787998f922ce0d3ab3f43"
+    },
+    {
+      "file": "native_main_compile.png",
+      "pixels": [
+        502,
+        461
+      ],
+      "sha256": "2038a3eb0acc2bfe1fc3e91f74234999703800142f85e5924cb95c585efa05d8"
+    },
+    {
+      "file": "native_suite_compile.png",
+      "pixels": [
+        502,
+        461
+      ],
+      "sha256": "9056e0f0da3edbc0e0647ea4d262b1398e9bacdc178bfaa8450ad7b1a73a2752"
+    },
+    {
+      "file": "connected_compile.png",
+      "pixels": [
+        502,
+        461
+      ],
+      "sha256": "999fb17d01903ba4900d79e103fbbc1532a06059a60f151b384db7a1c2872e41"
+    },
+    {
+      "file": "connected_travelling.png",
+      "pixels": [
+        4320,
+        3300
+      ],
+      "sha256": "0ee8a2173dd8cb564be37ae68b9f5bd4212dc1706dca2415cf57f03c043c9da0"
+    },
+    {
+      "file": "connected_arrival.png",
+      "pixels": [
+        4320,
+        3300
+      ],
+      "sha256": "112fbd60ad083acaef28474ff15a52f2786d80c0982b67a36e877ee120de7bef"
+    },
+    {
+      "file": "connected_jam_reopening.png",
+      "pixels": [
+        4320,
+        3573
+      ],
+      "sha256": "e7a1732778c9866fda7644a9edfdbfdaafd6f840c816b3267b10e4895a611196"
+    },
+    {
+      "file": "connected_disconnected.png",
+      "pixels": [
+        4320,
+        3300
+      ],
+      "sha256": "86efd427ef95e7a6ee99d739cae4669844831e339ebcef60176ce136df75b754"
+    },
+    {
+      "file": "connected_mobile.png",
+      "pixels": [
+        1170,
+        6024
+      ],
+      "sha256": "781d3b7fd4db19dc041ff66888780db6841d4fe92ae5a3a9789e8361e0cf544a"
+    },
+    {
+      "file": "connected_native_paused.png",
+      "pixels": [
+        1034,
+        838
+      ],
+      "sha256": "4b3d2662239df22e825a07a7b3dddec8e43015d16b331454f853b75612083528"
+    }
+  ]
+}

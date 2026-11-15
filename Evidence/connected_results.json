@@ -1,0 +1,1202 @@
+{
+  "result": "PASS",
+  "source": "Actual running i-TRiLOGI 7.52 simulator via localhost MQTT; no JavaScript controller execution",
+  "checks": [
+    {
+      "test": "Live native telemetry and UI connected indicator",
+      "result": "PASS"
+    },
+    {
+      "test": "HMI destination drives MOTOR_UP in native ladder",
+      "result": "PASS"
+    },
+    {
+      "test": "Native arrival, door opening and request cleared",
+      "result": "PASS"
+    },
+    {
+      "test": "Queued intermediate stop at floor 2 preserves floor 3 request",
+      "result": "PASS"
+    },
+    {
+      "test": "Native queue continues to floor 3",
+      "result": "PASS"
+    },
+    {
+      "test": "Native direction reversal downwards",
+      "result": "PASS"
+    },
+    {
+      "test": "Native 8-second closing timeout alarms and reopens",
+      "result": "PASS"
+    },
+    {
+      "test": "Reset clears native fault without enabling movement",
+      "result": "PASS"
+    },
+    {
+      "test": "Separate Start closes open door before native travel",
+      "result": "PASS"
+    },
+    {
+      "test": "HMI E-stop is received and latched by native ladder",
+      "result": "PASS"
+    },
+    {
+      "test": "Mobile UI and browser checks",
+      "result": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "Live native telemetry and UI connected indicator",
+      "at": "2026-11-12T18:33:14.012Z",
+      "snapshot": {
+        "state": "IDLE",
+        "time": "1.9",
+        "position": 1,
+        "door": 0,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": true,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "1.2",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.6",
+            "event": "DISABLED"
+          },
+          {
+            "time": "0.0",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 37,
+          "rx": 39,
+          "ageMs": 61,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "HMI destination drives MOTOR_UP in native ladder",
+      "at": "2026-11-12T18:33:15.682Z",
+      "snapshot": {
+        "state": "UP_RUN",
+        "time": "3.5",
+        "position": 1.7000000000000006,
+        "door": 0,
+        "currentFloor": null,
+        "lastFloor": 1,
+        "requests": [
+          3
+        ],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": false,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": true,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": true,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "2.1",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "1.2",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.6",
+            "event": "DISABLED"
+          },
+          {
+            "time": "0.0",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 52,
+          "rx": 55,
+          "ageMs": 4,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Native arrival, door opening and request cleared",
+      "at": "2026-11-12T18:33:20.454Z",
+      "snapshot": {
+        "state": "DWELL",
+        "time": "7.9",
+        "position": 3,
+        "door": 0.9999999999999999,
+        "currentFloor": 3,
+        "lastFloor": 3,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": false,
+          "FLOOR2": false,
+          "FLOOR3": true,
+          "DOOR_OPEN": true,
+          "DOOR_CLOSED": false,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": true,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "7.2",
+            "event": "DWELL"
+          },
+          {
+            "time": "6.2",
+            "event": "OPENING"
+          },
+          {
+            "time": "2.1",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "1.2",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.6",
+            "event": "DISABLED"
+          },
+          {
+            "time": "0.0",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 93,
+          "rx": 98,
+          "ageMs": 85,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Queued intermediate stop at floor 2 preserves floor 3 request",
+      "at": "2026-11-12T18:33:31.004Z",
+      "snapshot": {
+        "state": "DWELL",
+        "time": "4.2",
+        "position": 2.000000000000001,
+        "door": 0.9999999999999999,
+        "currentFloor": 2,
+        "lastFloor": 2,
+        "requests": [
+          3
+        ],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": false,
+          "FLOOR2": true,
+          "FLOOR3": false,
+          "DOOR_OPEN": true,
+          "DOOR_CLOSED": false,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": true,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "4.2",
+            "event": "DWELL"
+          },
+          {
+            "time": "3.2",
+            "event": "OPENING"
+          },
+          {
+            "time": "1.2",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 186,
+          "rx": 197,
+          "ageMs": 44,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Native queue continues to floor 3",
+      "at": "2026-11-12T18:33:41.085Z",
+      "snapshot": {
+        "state": "DWELL",
+        "time": "13.6",
+        "position": 2.9999999999999973,
+        "door": 0.9999999999999999,
+        "currentFloor": 3,
+        "lastFloor": 3,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": false,
+          "FLOOR2": false,
+          "FLOOR3": true,
+          "DOOR_OPEN": true,
+          "DOOR_CLOSED": false,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": true,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "13.5",
+            "event": "DWELL"
+          },
+          {
+            "time": "12.5",
+            "event": "OPENING"
+          },
+          {
+            "time": "10.5",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "9.5",
+            "event": "CLOSING"
+          },
+          {
+            "time": "4.2",
+            "event": "DWELL"
+          },
+          {
+            "time": "3.2",
+            "event": "OPENING"
+          },
+          {
+            "time": "1.2",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 274,
+          "rx": 290,
+          "ageMs": 84,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Native direction reversal downwards",
+      "at": "2026-11-12T18:33:47.861Z",
+      "snapshot": {
+        "state": "DOWN_RUN",
+        "time": "19.8",
+        "position": 2.9999999999999973,
+        "door": 2.7755575615628914e-17,
+        "currentFloor": 3,
+        "lastFloor": 3,
+        "requests": [
+          1
+        ],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": false,
+          "FLOOR2": false,
+          "FLOOR3": true,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": true,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": true,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "19.8",
+            "event": "DOWN_RUN"
+          },
+          {
+            "time": "19.7",
+            "event": "IDLE"
+          },
+          {
+            "time": "18.7",
+            "event": "CLOSING"
+          },
+          {
+            "time": "13.5",
+            "event": "DWELL"
+          },
+          {
+            "time": "12.5",
+            "event": "OPENING"
+          },
+          {
+            "time": "10.5",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "9.5",
+            "event": "CLOSING"
+          },
+          {
+            "time": "4.2",
+            "event": "DWELL"
+          },
+          {
+            "time": "3.2",
+            "event": "OPENING"
+          },
+          {
+            "time": "1.2",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          },
+          {
+            "time": "0.0",
+            "event": "FIELD MODEL RESTORED TO FLOOR 1; RESET THEN START"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 334,
+          "rx": 353,
+          "ageMs": 32,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Native 8-second closing timeout alarms and reopens",
+      "at": "2026-11-12T18:34:17.172Z",
+      "snapshot": {
+        "state": "FAULT — RESET REQUIRED",
+        "time": "47.0",
+        "position": 1,
+        "door": 1,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [
+          "JAM_FLT"
+        ],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": true,
+          "DOOR_CLOSED": false,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": true,
+          "BUZZER": true
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": true,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "46.7",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "46.1",
+            "event": "FAULT — REOPENING"
+          },
+          {
+            "time": "37.6",
+            "event": "CLOSING"
+          },
+          {
+            "time": "32.3",
+            "event": "DWELL"
+          },
+          {
+            "time": "31.3",
+            "event": "OPENING"
+          },
+          {
+            "time": "31.0",
+            "event": "IDLE"
+          },
+          {
+            "time": "30.0",
+            "event": "CLOSING"
+          },
+          {
+            "time": "24.8",
+            "event": "DWELL"
+          },
+          {
+            "time": "23.8",
+            "event": "OPENING"
+          },
+          {
+            "time": "19.8",
+            "event": "DOWN_RUN"
+          },
+          {
+            "time": "19.7",
+            "event": "IDLE"
+          },
+          {
+            "time": "18.7",
+            "event": "CLOSING"
+          },
+          {
+            "time": "13.5",
+            "event": "DWELL"
+          },
+          {
+            "time": "12.5",
+            "event": "OPENING"
+          },
+          {
+            "time": "10.5",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "9.5",
+            "event": "CLOSING"
+          },
+          {
+            "time": "4.2",
+            "event": "DWELL"
+          },
+          {
+            "time": "3.2",
+            "event": "OPENING"
+          },
+          {
+            "time": "1.2",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "0.1",
+            "event": "IDLE"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 590,
+          "rx": 624,
+          "ageMs": 84,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Reset clears native fault without enabling movement",
+      "at": "2026-11-12T18:34:17.494Z",
+      "snapshot": {
+        "state": "DISABLED",
+        "time": "47.3",
+        "position": 1,
+        "door": 1,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": true,
+          "DOOR_CLOSED": false,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "47.2",
+            "event": "DISABLED"
+          },
+          {
+            "time": "46.7",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "46.1",
+            "event": "FAULT — REOPENING"
+          },
+          {
+            "time": "37.6",
+            "event": "CLOSING"
+          },
+          {
+            "time": "32.3",
+            "event": "DWELL"
+          },
+          {
+            "time": "31.3",
+            "event": "OPENING"
+          },
+          {
+            "time": "31.0",
+            "event": "IDLE"
+          },
+          {
+            "time": "30.0",
+            "event": "CLOSING"
+          },
+          {
+            "time": "24.8",
+            "event": "DWELL"
+          },
+          {
+            "time": "23.8",
+            "event": "OPENING"
+          },
+          {
+            "time": "19.8",
+            "event": "DOWN_RUN"
+          },
+          {
+            "time": "19.7",
+            "event": "IDLE"
+          },
+          {
+            "time": "18.7",
+            "event": "CLOSING"
+          },
+          {
+            "time": "13.5",
+            "event": "DWELL"
+          },
+          {
+            "time": "12.5",
+            "event": "OPENING"
+          },
+          {
+            "time": "10.5",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "9.5",
+            "event": "CLOSING"
+          },
+          {
+            "time": "4.2",
+            "event": "DWELL"
+          },
+          {
+            "time": "3.2",
+            "event": "OPENING"
+          },
+          {
+            "time": "1.2",
+            "event": "UP_RUN"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 593,
+          "rx": 627,
+          "ageMs": 64,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Separate Start closes open door before native travel",
+      "at": "2026-11-12T18:34:19.355Z",
+      "snapshot": {
+        "state": "IDLE",
+        "time": "49.0",
+        "position": 1,
+        "door": 1.3877787807814457e-16,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": true,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "48.9",
+            "event": "IDLE"
+          },
+          {
+            "time": "47.9",
+            "event": "CLOSING"
+          },
+          {
+            "time": "47.2",
+            "event": "DISABLED"
+          },
+          {
+            "time": "46.7",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "46.1",
+            "event": "FAULT — REOPENING"
+          },
+          {
+            "time": "37.6",
+            "event": "CLOSING"
+          },
+          {
+            "time": "32.3",
+            "event": "DWELL"
+          },
+          {
+            "time": "31.3",
+            "event": "OPENING"
+          },
+          {
+            "time": "31.0",
+            "event": "IDLE"
+          },
+          {
+            "time": "30.0",
+            "event": "CLOSING"
+          },
+          {
+            "time": "24.8",
+            "event": "DWELL"
+          },
+          {
+            "time": "23.8",
+            "event": "OPENING"
+          },
+          {
+            "time": "19.8",
+            "event": "DOWN_RUN"
+          },
+          {
+            "time": "19.7",
+            "event": "IDLE"
+          },
+          {
+            "time": "18.7",
+            "event": "CLOSING"
+          },
+          {
+            "time": "13.5",
+            "event": "DWELL"
+          },
+          {
+            "time": "12.5",
+            "event": "OPENING"
+          },
+          {
+            "time": "10.5",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "9.5",
+            "event": "CLOSING"
+          },
+          {
+            "time": "4.2",
+            "event": "DWELL"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 609,
+          "rx": 644,
+          "ageMs": 92,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "HMI E-stop is received and latched by native ladder",
+      "at": "2026-11-12T18:34:19.518Z",
+      "snapshot": {
+        "state": "FAULT — RESET REQUIRED",
+        "time": "49.2",
+        "position": 1,
+        "door": 1.3877787807814457e-16,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [
+          "ESTOP_FLT"
+        ],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": false
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": true,
+          "BUZZER": true
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": true,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "49.2",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "48.9",
+            "event": "IDLE"
+          },
+          {
+            "time": "47.9",
+            "event": "CLOSING"
+          },
+          {
+            "time": "47.2",
+            "event": "DISABLED"
+          },
+          {
+            "time": "46.7",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "46.1",
+            "event": "FAULT — REOPENING"
+          },
+          {
+            "time": "37.6",
+            "event": "CLOSING"
+          },
+          {
+            "time": "32.3",
+            "event": "DWELL"
+          },
+          {
+            "time": "31.3",
+            "event": "OPENING"
+          },
+          {
+            "time": "31.0",
+            "event": "IDLE"
+          },
+          {
+            "time": "30.0",
+            "event": "CLOSING"
+          },
+          {
+            "time": "24.8",
+            "event": "DWELL"
+          },
+          {
+            "time": "23.8",
+            "event": "OPENING"
+          },
+          {
+            "time": "19.8",
+            "event": "DOWN_RUN"
+          },
+          {
+            "time": "19.7",
+            "event": "IDLE"
+          },
+          {
+            "time": "18.7",
+            "event": "CLOSING"
+          },
+          {
+            "time": "13.5",
+            "event": "DWELL"
+          },
+          {
+            "time": "12.5",
+            "event": "OPENING"
+          },
+          {
+            "time": "10.5",
+            "event": "UP_RUN"
+          },
+          {
+            "time": "9.5",
+            "event": "CLOSING"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 611,
+          "rx": 647,
+          "ageMs": 10,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    },
+    {
+      "name": "Mobile UI and browser checks",
+      "at": "2026-11-12T18:34:21.286Z",
+      "snapshot": {
+        "state": "DISABLED",
+        "time": "50.8",
+        "position": 1,
+        "door": 1.3877787807814457e-16,
+        "currentFloor": 1,
+        "lastFloor": 1,
+        "requests": [],
+        "alarms": [],
+        "inputs": {
+          "FLOOR1": true,
+          "FLOOR2": false,
+          "FLOOR3": false,
+          "DOOR_OPEN": false,
+          "DOOR_CLOSED": true,
+          "OBSTRUCT": false,
+          "ESTOP_OK": true
+        },
+        "outputs": {
+          "MOTOR_UP": false,
+          "MOTOR_DOWN": false,
+          "DOOR_OP_CMD": false,
+          "DOOR_CL_CMD": false,
+          "ALARM": false,
+          "BUZZER": false
+        },
+        "run": false,
+        "flags": {
+          "obstruction": false,
+          "estop": false,
+          "jam": false,
+          "driveFault": false,
+          "conflict": false,
+          "lostDoor": false,
+          "paused": false
+        },
+        "log": [
+          {
+            "time": "49.8",
+            "event": "DISABLED"
+          },
+          {
+            "time": "49.2",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "48.9",
+            "event": "IDLE"
+          },
+          {
+            "time": "47.9",
+            "event": "CLOSING"
+          },
+          {
+            "time": "47.2",
+            "event": "DISABLED"
+          },
+          {
+            "time": "46.7",
+            "event": "FAULT — RESET REQUIRED"
+          },
+          {
+            "time": "46.1",
+            "event": "FAULT — REOPENING"
+          },
+          {
+            "time": "37.6",
+            "event": "CLOSING"
+          },
+          {
+            "time": "32.3",
+            "event": "DWELL"
+          },
+          {
+            "time": "31.3",
+            "event": "OPENING"
+          },
+          {
+            "time": "31.0",
+            "event": "IDLE"
+          },
+          {
+            "time": "30.0",
+            "event": "CLOSING"
+          },
+          {
+            "time": "24.8",
+            "event": "DWELL"
+          },
+          {
+            "time": "23.8",
+            "event": "OPENING"
+          },
+          {
+            "time": "19.8",
+            "event": "DOWN_RUN"
+          },
+          {
+            "time": "19.7",
+            "event": "IDLE"
+          },
+          {
+            "time": "18.7",
+            "event": "CLOSING"
+          },
+          {
+            "time": "13.5",
+            "event": "DWELL"
+          },
+          {
+            "time": "12.5",
+            "event": "OPENING"
+          },
+          {
+            "time": "10.5",
+            "event": "UP_RUN"
+          }
+        ],
+        "connection": {
+          "live": true,
+          "source": "Native TriLOGI ladder over local MQTT",
+          "tx": 626,
+          "rx": 662,
+          "ageMs": 99,
+          "field": "Simulated cabin and doors",
+          "watchdogSeconds": 2
+        }
+      }
+    }
+  ]
+}

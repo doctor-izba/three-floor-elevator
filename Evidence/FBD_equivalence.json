@@ -1,0 +1,8 @@
+{
+  "comparison": "LD Boolean scan evaluator vs independently evaluated FBD gate graph",
+  "networks": 68,
+  "compared_scans": 5931,
+  "signals_per_scan": 83,
+  "result": "PASS",
+  "native_FBD_execution": false
+}

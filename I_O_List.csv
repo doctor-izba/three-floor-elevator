@@ -1,0 +1,22 @@
+﻿Address,Tag,Type,Meaning
+Input 1,CALL1,DI,Hall call Floor 1
+Input 2,CALL2,DI,Hall call Floor 2
+Input 3,CALL3,DI,Hall call Floor 3
+Input 4,CAB1,DI,Cabin request Floor 1
+Input 5,CAB2,DI,Cabin request Floor 2
+Input 6,CAB3,DI,Cabin request Floor 3
+Input 7,FLOOR1,DI,Cabin at Floor 1
+Input 8,FLOOR2,DI,Cabin at Floor 2
+Input 9,FLOOR3,DI,Cabin at Floor 3
+Input 10,DOOR_OPEN,DI,Door fully open
+Input 11,DOOR_CLOSED,DI,Door fully closed
+Input 12,OBSTRUCT,DI,Door path obstructed
+Input 13,ESTOP_OK,DI,E-stop circuit healthy
+Input 14,START,DI,Enable operation on a rising edge
+Input 15,RESET,DI,Reset corrected fault on a rising edge
+Output 1,MOTOR_UP,DO,MOTOR_UP
+Output 2,MOTOR_DOWN,DO,MOTOR_DOWN
+Output 3,DOOR_OP_CMD,DO,DOOR_OP_CMD
+Output 4,DOOR_CL_CMD,DO,DOOR_CL_CMD
+Output 5,ALARM,DO,ALARM
+Output 6,BUZZER,DO,BUZZER

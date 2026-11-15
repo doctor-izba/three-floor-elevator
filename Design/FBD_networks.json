@@ -1,0 +1,2615 @@
+[
+  {
+    "order": 1,
+    "output": "START_EDGE",
+    "expression": "START*/PREV_START",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "START"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "PREV_START"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "output": "RESET_EDGE",
+    "expression": "RESET*/PREV_RESET",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "RESET"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "PREV_RESET"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "output": "PREV_START",
+    "expression": "START",
+    "network": {
+      "type": "WIRE",
+      "name": "START"
+    }
+  },
+  {
+    "order": 4,
+    "output": "PREV_RESET",
+    "expression": "RESET",
+    "network": {
+      "type": "WIRE",
+      "name": "RESET"
+    }
+  },
+  {
+    "order": 5,
+    "output": "EDGE1",
+    "expression": "(CALL1*/PCALL1+CAB1*/PCAB1)*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CALL1"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "PCALL1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CAB1"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "PCAB1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "output": "PCALL1",
+    "expression": "CALL1",
+    "network": {
+      "type": "WIRE",
+      "name": "CALL1"
+    }
+  },
+  {
+    "order": 7,
+    "output": "PCAB1",
+    "expression": "CAB1",
+    "network": {
+      "type": "WIRE",
+      "name": "CAB1"
+    }
+  },
+  {
+    "order": 8,
+    "output": "EDGE2",
+    "expression": "(CALL2*/PCALL2+CAB2*/PCAB2)*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CALL2"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "PCALL2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CAB2"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "PCAB2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "output": "PCALL2",
+    "expression": "CALL2",
+    "network": {
+      "type": "WIRE",
+      "name": "CALL2"
+    }
+  },
+  {
+    "order": 10,
+    "output": "PCAB2",
+    "expression": "CAB2",
+    "network": {
+      "type": "WIRE",
+      "name": "CAB2"
+    }
+  },
+  {
+    "order": 11,
+    "output": "EDGE3",
+    "expression": "(CALL3*/PCALL3+CAB3*/PCAB3)*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CALL3"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "PCALL3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CAB3"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "PCAB3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 12,
+    "output": "PCALL3",
+    "expression": "CALL3",
+    "network": {
+      "type": "WIRE",
+      "name": "CALL3"
+    }
+  },
+  {
+    "order": 13,
+    "output": "PCAB3",
+    "expression": "CAB3",
+    "network": {
+      "type": "WIRE",
+      "name": "CAB3"
+    }
+  },
+  {
+    "order": 14,
+    "output": "DWELL_T",
+    "expression": "DWELL",
+    "network": {
+      "type": "WIRE",
+      "name": "DWELL"
+    },
+    "timer": {
+      "type": "TON",
+      "preset_seconds": 5.0
+    }
+  },
+  {
+    "order": 15,
+    "output": "CLOSE_T",
+    "expression": "CLOSING",
+    "network": {
+      "type": "WIRE",
+      "name": "CLOSING"
+    },
+    "timer": {
+      "type": "TON",
+      "preset_seconds": 8.0
+    }
+  },
+  {
+    "order": 16,
+    "output": "OPEN_T",
+    "expression": "OPENING",
+    "network": {
+      "type": "WIRE",
+      "name": "OPENING"
+    },
+    "timer": {
+      "type": "TON",
+      "preset_seconds": 8.0
+    }
+  },
+  {
+    "order": 17,
+    "output": "TRAVEL_T",
+    "expression": "UP_RUN+DOWN_RUN",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "UP_RUN"
+        },
+        {
+          "type": "WIRE",
+          "name": "DOWN_RUN"
+        }
+      ]
+    },
+    "timer": {
+      "type": "TON",
+      "preset_seconds": 15.0
+    }
+  },
+  {
+    "order": 18,
+    "output": "REC_OPEN_T",
+    "expression": "REOPEN",
+    "network": {
+      "type": "WIRE",
+      "name": "REOPEN"
+    },
+    "timer": {
+      "type": "TON",
+      "preset_seconds": 8.0
+    }
+  },
+  {
+    "order": 19,
+    "output": "POS_VALID",
+    "expression": "FLOOR1*/FLOOR2*/FLOOR3+/FLOOR1*FLOOR2*/FLOOR3+/FLOOR1*/FLOOR2*FLOOR3",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR1"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR2"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR1"
+                }
+              ]
+            },
+            {
+              "type": "WIRE",
+              "name": "FLOOR2"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR1"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR2"
+                }
+              ]
+            },
+            {
+              "type": "WIRE",
+              "name": "FLOOR3"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 20,
+    "output": "BAD_SENS",
+    "expression": "FLOOR1*FLOOR2+FLOOR1*FLOOR3+FLOOR2*FLOOR3+DOOR_OPEN*DOOR_CLOSED",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR1"
+            },
+            {
+              "type": "WIRE",
+              "name": "FLOOR2"
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR1"
+            },
+            {
+              "type": "WIRE",
+              "name": "FLOOR3"
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR2"
+            },
+            {
+              "type": "WIRE",
+              "name": "FLOOR3"
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_OPEN"
+            },
+            {
+              "type": "WIRE",
+              "name": "DOOR_CLOSED"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 21,
+    "output": "DOOR_LOST",
+    "expression": "(UP_RUN+DOWN_RUN)*(/DOOR_CLOSED+OBSTRUCT)",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "UP_RUN"
+            },
+            {
+              "type": "WIRE",
+              "name": "DOWN_RUN"
+            }
+          ]
+        },
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "DOOR_CLOSED"
+                }
+              ]
+            },
+            {
+              "type": "WIRE",
+              "name": "OBSTRUCT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 22,
+    "output": "POS_LOST",
+    "expression": "IDLE*RUN_EN*/POS_VALID",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "IDLE"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS_VALID"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 23,
+    "output": "LIVE_FAULT",
+    "expression": "/ESTOP_OK+BAD_SENS+DOOR_LOST+POS_LOST+CLOSE_T+OPEN_T+TRAVEL_T+REC_OPEN_T+CLOSING*OBSTRUCT",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "ESTOP_OK"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "BAD_SENS"
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_LOST"
+        },
+        {
+          "type": "WIRE",
+          "name": "POS_LOST"
+        },
+        {
+          "type": "WIRE",
+          "name": "CLOSE_T"
+        },
+        {
+          "type": "WIRE",
+          "name": "OPEN_T"
+        },
+        {
+          "type": "WIRE",
+          "name": "TRAVEL_T"
+        },
+        {
+          "type": "WIRE",
+          "name": "REC_OPEN_T"
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "CLOSING"
+            },
+            {
+              "type": "WIRE",
+              "name": "OBSTRUCT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 24,
+    "output": "CLEAR_FAULT",
+    "expression": "RESET_EDGE*/LIVE_FAULT*POS_VALID*(DOOR_CLOSED+DOOR_OPEN)*/OBSTRUCT*/START*/REOPEN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "RESET_EDGE"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "LIVE_FAULT"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "POS_VALID"
+        },
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_CLOSED"
+            },
+            {
+              "type": "WIRE",
+              "name": "DOOR_OPEN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "OBSTRUCT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "START"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "REOPEN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 25,
+    "output": "ESTOP_FLT",
+    "expression": "(/ESTOP_OK+ESTOP_FLT)*/CLEAR_FAULT",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "ESTOP_OK"
+                }
+              ]
+            },
+            {
+              "type": "WIRE",
+              "name": "ESTOP_FLT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "CLEAR_FAULT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 26,
+    "output": "SENSOR_FLT",
+    "expression": "(BAD_SENS+SENSOR_FLT)*/CLEAR_FAULT",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "BAD_SENS"
+            },
+            {
+              "type": "WIRE",
+              "name": "SENSOR_FLT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "CLEAR_FAULT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 27,
+    "output": "DOOR_FLT",
+    "expression": "(DOOR_LOST+OPEN_T+REC_OPEN_T+DOOR_FLT)*/CLEAR_FAULT",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_LOST"
+            },
+            {
+              "type": "WIRE",
+              "name": "OPEN_T"
+            },
+            {
+              "type": "WIRE",
+              "name": "REC_OPEN_T"
+            },
+            {
+              "type": "WIRE",
+              "name": "DOOR_FLT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "CLEAR_FAULT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 28,
+    "output": "TRAVEL_FLT",
+    "expression": "(TRAVEL_T+POS_LOST+TRAVEL_FLT)*/CLEAR_FAULT",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "TRAVEL_T"
+            },
+            {
+              "type": "WIRE",
+              "name": "POS_LOST"
+            },
+            {
+              "type": "WIRE",
+              "name": "TRAVEL_FLT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "CLEAR_FAULT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 29,
+    "output": "JAM_FLT",
+    "expression": "(CLOSING*OBSTRUCT+CLOSE_T+JAM_FLT)*/CLEAR_FAULT",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CLOSING"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "OBSTRUCT"
+                }
+              ]
+            },
+            {
+              "type": "WIRE",
+              "name": "CLOSE_T"
+            },
+            {
+              "type": "WIRE",
+              "name": "JAM_FLT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "CLEAR_FAULT"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 30,
+    "output": "HARD_FAULT",
+    "expression": "ESTOP_FLT+SENSOR_FLT+DOOR_FLT+TRAVEL_FLT",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "ESTOP_FLT"
+        },
+        {
+          "type": "WIRE",
+          "name": "SENSOR_FLT"
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_FLT"
+        },
+        {
+          "type": "WIRE",
+          "name": "TRAVEL_FLT"
+        }
+      ]
+    }
+  },
+  {
+    "order": 31,
+    "output": "FAULT",
+    "expression": "HARD_FAULT+JAM_FLT",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "HARD_FAULT"
+        },
+        {
+          "type": "WIRE",
+          "name": "JAM_FLT"
+        }
+      ]
+    }
+  },
+  {
+    "order": 32,
+    "output": "REOPEN",
+    "expression": "(CLOSING*(OBSTRUCT+CLOSE_T)+REOPEN)*/DOOR_OPEN*/HARD_FAULT*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CLOSING"
+                },
+                {
+                  "type": "OR",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "OBSTRUCT"
+                    },
+                    {
+                      "type": "WIRE",
+                      "name": "CLOSE_T"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "WIRE",
+              "name": "REOPEN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_OPEN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "HARD_FAULT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 33,
+    "output": "RUN_EN",
+    "expression": "(RUN_EN+START_EDGE*POS_VALID*(DOOR_CLOSED+DOOR_OPEN)*/OBSTRUCT)*/FAULT*ESTOP_OK*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "RUN_EN"
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "START_EDGE"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "POS_VALID"
+                },
+                {
+                  "type": "OR",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "DOOR_CLOSED"
+                    },
+                    {
+                      "type": "WIRE",
+                      "name": "DOOR_OPEN"
+                    }
+                  ]
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "OBSTRUCT"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FAULT"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "ESTOP_OK"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 34,
+    "output": "POS1",
+    "expression": "FLOOR1+POS1*/FLOOR2*/FLOOR3",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "FLOOR1"
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS1"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR2"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 35,
+    "output": "POS2",
+    "expression": "FLOOR2+POS2*/FLOOR1*/FLOOR3",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "FLOOR2"
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS2"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR1"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 36,
+    "output": "POS3",
+    "expression": "FLOOR3+POS3*/FLOOR1*/FLOOR2",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "FLOOR3"
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS3"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR1"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "FLOOR2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 37,
+    "output": "SERVE1",
+    "expression": "(OPENING+DWELL)*DOOR_OPEN*FLOOR1*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "OPENING"
+            },
+            {
+              "type": "WIRE",
+              "name": "DWELL"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_OPEN"
+        },
+        {
+          "type": "WIRE",
+          "name": "FLOOR1"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 38,
+    "output": "REQ1",
+    "expression": "(REQ1+EDGE1)*/SERVE1*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "REQ1"
+            },
+            {
+              "type": "WIRE",
+              "name": "EDGE1"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "SERVE1"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 39,
+    "output": "SERVE2",
+    "expression": "(OPENING+DWELL)*DOOR_OPEN*FLOOR2*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "OPENING"
+            },
+            {
+              "type": "WIRE",
+              "name": "DWELL"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_OPEN"
+        },
+        {
+          "type": "WIRE",
+          "name": "FLOOR2"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 40,
+    "output": "REQ2",
+    "expression": "(REQ2+EDGE2)*/SERVE2*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "REQ2"
+            },
+            {
+              "type": "WIRE",
+              "name": "EDGE2"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "SERVE2"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 41,
+    "output": "SERVE3",
+    "expression": "(OPENING+DWELL)*DOOR_OPEN*FLOOR3*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "OPENING"
+            },
+            {
+              "type": "WIRE",
+              "name": "DWELL"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_OPEN"
+        },
+        {
+          "type": "WIRE",
+          "name": "FLOOR3"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 42,
+    "output": "REQ3",
+    "expression": "(REQ3+EDGE3)*/SERVE3*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "REQ3"
+            },
+            {
+              "type": "WIRE",
+              "name": "EDGE3"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "SERVE3"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 43,
+    "output": "AT_REQ",
+    "expression": "FLOOR1*REQ1+FLOOR2*REQ2+FLOOR3*REQ3",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR1"
+            },
+            {
+              "type": "WIRE",
+              "name": "REQ1"
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR2"
+            },
+            {
+              "type": "WIRE",
+              "name": "REQ2"
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR3"
+            },
+            {
+              "type": "WIRE",
+              "name": "REQ3"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 44,
+    "output": "ABOVE",
+    "expression": "POS1*(REQ2+REQ3)+POS2*REQ3",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS1"
+            },
+            {
+              "type": "OR",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "REQ2"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "REQ3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS2"
+            },
+            {
+              "type": "WIRE",
+              "name": "REQ3"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 45,
+    "output": "BELOW",
+    "expression": "POS3*(REQ1+REQ2)+POS2*REQ1",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS3"
+            },
+            {
+              "type": "OR",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "REQ1"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "REQ2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "POS2"
+            },
+            {
+              "type": "WIRE",
+              "name": "REQ1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 46,
+    "output": "PREF_UP",
+    "expression": "(UP_RUN+PREF_UP*/DOWN_RUN+1st.Scan)*/DOWN_RUN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "UP_RUN"
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "PREF_UP"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "DOWN_RUN"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOWN_RUN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 47,
+    "output": "GO_UP",
+    "expression": "IDLE*RUN_EN*DOOR_CLOSED*/AT_REQ*ABOVE*(PREF_UP+/BELOW)",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "IDLE"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_CLOSED"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "AT_REQ"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "ABOVE"
+        },
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "PREF_UP"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "BELOW"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 48,
+    "output": "GO_DOWN",
+    "expression": "IDLE*RUN_EN*DOOR_CLOSED*/AT_REQ*BELOW*(/PREF_UP+/ABOVE)",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "IDLE"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_CLOSED"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "AT_REQ"
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "BELOW"
+        },
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "PREF_UP"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "ABOVE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 49,
+    "output": "ARRIVE_UP",
+    "expression": "AT_REQ+FLOOR3",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "AT_REQ"
+        },
+        {
+          "type": "WIRE",
+          "name": "FLOOR3"
+        }
+      ]
+    }
+  },
+  {
+    "order": 50,
+    "output": "ARRIVE_DOWN",
+    "expression": "AT_REQ+FLOOR1",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "AT_REQ"
+        },
+        {
+          "type": "WIRE",
+          "name": "FLOOR1"
+        }
+      ]
+    }
+  },
+  {
+    "order": 51,
+    "output": "N_IDLE",
+    "expression": "IDLE*DOOR_CLOSED*/AT_REQ*/GO_UP*/GO_DOWN+CLOSING*DOOR_CLOSED*/OBSTRUCT+/RUN_EN",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "IDLE"
+            },
+            {
+              "type": "WIRE",
+              "name": "DOOR_CLOSED"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "AT_REQ"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "GO_UP"
+                }
+              ]
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "GO_DOWN"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "CLOSING"
+            },
+            {
+              "type": "WIRE",
+              "name": "DOOR_CLOSED"
+            },
+            {
+              "type": "NOT",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "OBSTRUCT"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "RUN_EN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 52,
+    "output": "N_UP",
+    "expression": "(GO_UP+UP_RUN*/ARRIVE_UP)*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "GO_UP"
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "UP_RUN"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "ARRIVE_UP"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 53,
+    "output": "N_DOWN",
+    "expression": "(GO_DOWN+DOWN_RUN*/ARRIVE_DOWN)*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "GO_DOWN"
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "DOWN_RUN"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "ARRIVE_DOWN"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 54,
+    "output": "N_OPEN",
+    "expression": "(IDLE*AT_REQ+UP_RUN*ARRIVE_UP+DOWN_RUN*ARRIVE_DOWN+CLOSING*OBSTRUCT+OPENING*/DOOR_OPEN)*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "IDLE"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "AT_REQ"
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "UP_RUN"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "ARRIVE_UP"
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "DOWN_RUN"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "ARRIVE_DOWN"
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CLOSING"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "OBSTRUCT"
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "OPENING"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "DOOR_OPEN"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 55,
+    "output": "N_DWELL",
+    "expression": "(OPENING*DOOR_OPEN+DWELL*(/DWELL_T+OBSTRUCT))*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "OPENING"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "DOOR_OPEN"
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "DWELL"
+                },
+                {
+                  "type": "OR",
+                  "inputs": [
+                    {
+                      "type": "NOT",
+                      "inputs": [
+                        {
+                          "type": "WIRE",
+                          "name": "DWELL_T"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "WIRE",
+                      "name": "OBSTRUCT"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 56,
+    "output": "N_CLOSE",
+    "expression": "(IDLE*DOOR_OPEN*/AT_REQ+DWELL*DWELL_T*/OBSTRUCT+CLOSING*/DOOR_CLOSED*/OBSTRUCT)*RUN_EN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "IDLE"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "DOOR_OPEN"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "AT_REQ"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "DWELL"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "DWELL_T"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "OBSTRUCT"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "CLOSING"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "DOOR_CLOSED"
+                    }
+                  ]
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "OBSTRUCT"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        }
+      ]
+    }
+  },
+  {
+    "order": 57,
+    "output": "IDLE",
+    "expression": "N_IDLE+1st.Scan",
+    "network": {
+      "type": "OR",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "N_IDLE"
+        },
+        {
+          "type": "WIRE",
+          "name": "1st.Scan"
+        }
+      ]
+    }
+  },
+  {
+    "order": 58,
+    "output": "UP_RUN",
+    "expression": "N_UP*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "N_UP"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 59,
+    "output": "DOWN_RUN",
+    "expression": "N_DOWN*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "N_DOWN"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 60,
+    "output": "OPENING",
+    "expression": "N_OPEN*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "N_OPEN"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 61,
+    "output": "DWELL",
+    "expression": "N_DWELL*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "N_DWELL"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 62,
+    "output": "CLOSING",
+    "expression": "N_CLOSE*/1st.Scan",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "N_CLOSE"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "1st.Scan"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 63,
+    "output": "MOTOR_UP",
+    "expression": "UP_RUN*RUN_EN*DOOR_CLOSED*/DOOR_OPEN*/OBSTRUCT*/FAULT*/DOWN_RUN*/FLOOR3",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "UP_RUN"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_CLOSED"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_OPEN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "OBSTRUCT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FAULT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOWN_RUN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR3"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 64,
+    "output": "MOTOR_DOWN",
+    "expression": "DOWN_RUN*RUN_EN*DOOR_CLOSED*/DOOR_OPEN*/OBSTRUCT*/FAULT*/UP_RUN*/FLOOR1",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "DOWN_RUN"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        },
+        {
+          "type": "WIRE",
+          "name": "DOOR_CLOSED"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_OPEN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "OBSTRUCT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FAULT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "UP_RUN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FLOOR1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 65,
+    "output": "DOOR_OP_CMD",
+    "expression": "(OPENING*RUN_EN*/FAULT+REOPEN*JAM_FLT)*POS_VALID*ESTOP_OK*/HARD_FAULT*/DOOR_OPEN*/UP_RUN*/DOWN_RUN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "OR",
+          "inputs": [
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "OPENING"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "RUN_EN"
+                },
+                {
+                  "type": "NOT",
+                  "inputs": [
+                    {
+                      "type": "WIRE",
+                      "name": "FAULT"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "AND",
+              "inputs": [
+                {
+                  "type": "WIRE",
+                  "name": "REOPEN"
+                },
+                {
+                  "type": "WIRE",
+                  "name": "JAM_FLT"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "WIRE",
+          "name": "POS_VALID"
+        },
+        {
+          "type": "WIRE",
+          "name": "ESTOP_OK"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "HARD_FAULT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_OPEN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "UP_RUN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOWN_RUN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 66,
+    "output": "DOOR_CL_CMD",
+    "expression": "CLOSING*RUN_EN*/DOOR_CLOSED*/OBSTRUCT*/FAULT*/UP_RUN*/DOWN_RUN",
+    "network": {
+      "type": "AND",
+      "inputs": [
+        {
+          "type": "WIRE",
+          "name": "CLOSING"
+        },
+        {
+          "type": "WIRE",
+          "name": "RUN_EN"
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOOR_CLOSED"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "OBSTRUCT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "FAULT"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "UP_RUN"
+            }
+          ]
+        },
+        {
+          "type": "NOT",
+          "inputs": [
+            {
+              "type": "WIRE",
+              "name": "DOWN_RUN"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "order": 67,
+    "output": "ALARM",
+    "expression": "FAULT",
+    "network": {
+      "type": "WIRE",
+      "name": "FAULT"
+    }
+  },
+  {
+    "order": 68,
+    "output": "BUZZER",
+    "expression": "FAULT",
+    "network": {
+      "type": "WIRE",
+      "name": "FAULT"
+    }
+  }
+]

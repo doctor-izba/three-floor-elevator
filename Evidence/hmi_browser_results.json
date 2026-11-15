@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "tests": [
+    "Dashboard renders",
+    "Start and destination controls",
+    "Animated normal trip and door sequence",
+    "Closing jam injected through UI",
+    "Alarm and reopening",
+    "Reset requires separate Start",
+    "Emergency stop and release",
+    "390px mobile layout without horizontal overflow",
+    "No browser page errors"
+  ],
+  "screenshots": [
+    "hmi_travelling.png",
+    "hmi_door_open.png",
+    "hmi_jam_reopening.png",
+    "hmi_jam_latched.png",
+    "hmi_mobile.png"
+  ],
+  "signal_source": "Local plant model and controller equations; no live TriLOGI connection"
+}
