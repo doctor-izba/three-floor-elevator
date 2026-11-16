@@ -14,7 +14,7 @@ For a native rerun, open `TriLOGI_Projects/04_Native_Verification_Suite.PC7` and
 
 ## Video scope
 
-[Elevator_Live_Demo.webm](../Presentation/Elevator_Live_Demo.webm) is a silent 40.68-second recording at 1440×1100 and 25 fps. It shows a connected HMI: travel from floor 1 to 3, arrival and door opening, a closing jam with reopening, Reset, a separate Start, and E-stop.
+[Elevator_Live_Demo_1080p.mp4](../Presentation/Elevator_Live_Demo_1080p.mp4) is a silent 150-second presentation video at 1920×1080 and a constant 30 fps. It shows initialization, Reset and Start, a trip from floor 1 to 3 and back, a closing jam with reopening, deliberate fault recovery, and E-stop. Chapter captions are included. Cabin and door motion is smoothed offline with optical-flow interpolation; PLC states and test outcomes come from live execution. See [video verification](../Evidence/smooth_video_verification.json) for the recorded observations and encoding checks.
 
 An earlier recording attempt failed during a queued stop at floor 2: the field model stopped at 2.05 and subsequently raised DOOR_FLT. This load-sensitive case remains open. Previous passing records do not override that later observation. See [the video notes](../Presentation/VIDEO_NOTES_RU.md).
 

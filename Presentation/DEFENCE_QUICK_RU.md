@@ -22,4 +22,4 @@
 ## Короткое начало на английском
 “Our project is a three-floor elevator control system. The goal is to connect field signals, a PLC controller and an operator interface. TriLOGI executes the ladder logic, while Node-RED simulates the mechanics and displays live states over local MQTT. We verify normal operation, request scheduling and fault recovery.”
 
-Презентация: Elevator_Defence_EE2401.pptx. Подробные русские заметки находятся в заметках слайдов и Speaker_Notes_RU.txt. Видео Elevator_Live_Demo.webm показывает живую работу HMI без озвучки; открыть можно в Chrome. Фактический вклад каждого участника и использование ИИ объяснять честно, согласно отчёту.
+Презентация: Elevator_Defence_EE2401.pptx. Подробные русские заметки находятся в заметках слайдов и Speaker_Notes_RU.txt. Видео Elevator_Live_Demo_1080p.mp4 показывает живую работу HMI без озвучки; открыть можно в Chrome. Фактический вклад каждого участника и использование ИИ объяснять честно, согласно отчёту.

@@ -6,7 +6,7 @@ The ladder program handles floor requests, travel direction, the door sequence a
 
 ![Elevator operator panel, connected to TriLOGI](Evidence/connected_arrival.png)
 
-[Watch the demo](Presentation/Elevator_Live_Demo.webm) · [Read the report](Final_Project_Report_EE2401_Yesbol_Kali.pdf) · [Presentation](Presentation/Elevator_Defence_EE2401.pdf)
+[Watch the demo](Presentation/Elevator_Live_Demo_1080p.mp4) · [Read the report](Final_Project_Report_EE2401_Yesbol_Kali.pdf) · [Presentation](Presentation/Elevator_Defence_EE2401.pdf)
 
 ## Run the demonstration
 
